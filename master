@@ -36,7 +36,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Main.Name = "Main"
 Main.Parent = ScreenGui
 Main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Main.Position = UDim2.new(0.296493888, 0, 0.381391019, 0)
+Main.Position = UDim2.new(0.0167682767, 0, 0.739584327, 0)
 Main.Size = UDim2.new(0, 460, 0, 224)
 
 UICorner.CornerRadius = UDim.new(0, 3)
@@ -194,7 +194,7 @@ Console_3.TextWrapped = true
 
 -- Scripts:
 
-local function ALXZOW_fake_script() -- Main.Drag 
+local function TZBEH_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	--Credits go to whoever made this script.
@@ -237,8 +237,8 @@ local function ALXZOW_fake_script() -- Main.Drag
 	drag(script.Parent)
 	
 end
-coroutine.wrap(ALXZOW_fake_script)()
-local function SLNHLZ_fake_script() -- ScreenGui.Main 
+coroutine.wrap(TZBEH_fake_script)()
+local function VQUN_fake_script() -- ScreenGui.Main 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.Name = math.random(1,999999)
@@ -271,8 +271,8 @@ local function SLNHLZ_fake_script() -- ScreenGui.Main
 		ExecuBox.Text = ""
 	end)
 end
-coroutine.wrap(SLNHLZ_fake_script)()
-local function ARTK_fake_script() -- Console_3.LocalScript 
+coroutine.wrap(VQUN_fake_script)()
+local function ZNCL_fake_script() -- Console_3.LocalScript 
 	local script = Instance.new('LocalScript', Console_3)
 
 	local logService = game:GetService("LogService")
@@ -295,8 +295,8 @@ local function ARTK_fake_script() -- Console_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ARTK_fake_script)()
-local function EDGTVN_fake_script() -- Console_2.Drag 
+coroutine.wrap(ZNCL_fake_script)()
+local function SNUP_fake_script() -- Console_2.Drag 
 	local script = Instance.new('LocalScript', Console_2)
 
 	--Credits go to whoever made this script.
@@ -339,4 +339,4 @@ local function EDGTVN_fake_script() -- Console_2.Drag
 	drag(script.Parent)
 	
 end
-coroutine.wrap(EDGTVN_fake_script)()
+coroutine.wrap(SNUP_fake_script)()
