@@ -1,0 +1,342 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ExecuBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local Bottom = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ExecSS = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Console = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Top = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local Close = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Console_2 = Instance.new("Frame")
+local Top_2 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Console_3 = Instance.new("TextBox")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Main.Position = UDim2.new(0.296493888, 0, 0.381391019, 0)
+Main.Size = UDim2.new(0, 460, 0, 224)
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = Main
+
+ExecuBox.Name = "ExecuBox"
+ExecuBox.Parent = Main
+ExecuBox.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+ExecuBox.Position = UDim2.new(0.0195652172, 0, 0.214285716, 0)
+ExecuBox.Size = UDim2.new(0, 440, 0, 120)
+ExecuBox.ClearTextOnFocus = false
+ExecuBox.Font = Enum.Font.Nunito
+ExecuBox.MultiLine = true
+ExecuBox.Text = "print(\"Phobos\")"
+ExecuBox.TextColor3 = Color3.fromRGB(0, 179, 255)
+ExecuBox.TextScaled = true
+ExecuBox.TextSize = 73.000
+ExecuBox.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = ExecuBox
+
+Bottom.Name = "Bottom"
+Bottom.Parent = Main
+Bottom.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Bottom.Position = UDim2.new(0, 0, 0.79700619, 0)
+Bottom.Size = UDim2.new(0, 460, 0, 45)
+
+UICorner_3.CornerRadius = UDim.new(0, 3)
+UICorner_3.Parent = Bottom
+
+Clear.Name = "Clear"
+Clear.Parent = Bottom
+Clear.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Clear.Position = UDim2.new(0.509904146, 0, 0.227315262, 0)
+Clear.Size = UDim2.new(0, 90, 0, 23)
+Clear.Font = Enum.Font.Nunito
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(0, 179, 255)
+Clear.TextScaled = true
+Clear.TextSize = 14.000
+Clear.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 3)
+UICorner_4.Parent = Clear
+
+ExecSS.Name = "ExecSS"
+ExecSS.Parent = Bottom
+ExecSS.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+ExecSS.Position = UDim2.new(0.21207805, 0, 0.227315262, 0)
+ExecSS.Size = UDim2.new(0, 130, 0, 23)
+ExecSS.Font = Enum.Font.Nunito
+ExecSS.Text = "Execute Server"
+ExecSS.TextColor3 = Color3.fromRGB(0, 179, 255)
+ExecSS.TextScaled = true
+ExecSS.TextSize = 14.000
+ExecSS.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 3)
+UICorner_5.Parent = ExecSS
+
+Console.Name = "Console"
+Console.Parent = Bottom
+Console.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Console.Position = UDim2.new(0.0207736474, 0, 0.227315262, 0)
+Console.Size = UDim2.new(0, 82, 0, 23)
+Console.Font = Enum.Font.Nunito
+Console.Text = "Console"
+Console.TextColor3 = Color3.fromRGB(0, 179, 255)
+Console.TextScaled = true
+Console.TextSize = 14.000
+Console.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 3)
+UICorner_6.Parent = Console
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Top.Size = UDim2.new(0, 460, 0, 38)
+
+UICorner_7.CornerRadius = UDim.new(0, 3)
+UICorner_7.Parent = Top
+
+ImageLabel.Parent = Top
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0, 0, 0.0882349238, 0)
+ImageLabel.Size = UDim2.new(0, 36, 0, 32)
+ImageLabel.Image = "rbxassetid://10767529216"
+
+Close.Name = "Close"
+Close.Parent = Top
+Close.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.922947645, 0, 0, 0)
+Close.Size = UDim2.new(0, 35, 0, 39)
+Close.Font = Enum.Font.Arial
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 179, 255)
+Close.TextSize = 24.000
+Close.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 3)
+UICorner_8.Parent = Close
+
+Console_2.Name = "Console"
+Console_2.Parent = ScreenGui
+Console_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Console_2.Position = UDim2.new(0.227623865, 0, 0.637605131, 0)
+Console_2.Size = UDim2.new(0, 335, 0, 274)
+Console_2.Visible = false
+
+Top_2.Name = "Top"
+Top_2.Parent = Console_2
+Top_2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Top_2.Position = UDim2.new(0, 0, -0.00483660493, 0)
+Top_2.Size = UDim2.new(0, 335, 0, 39)
+
+UICorner_9.CornerRadius = UDim.new(0, 3)
+UICorner_9.Parent = Top_2
+
+ImageLabel_2.Parent = Top_2
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0, 0, 0.0882349238, 0)
+ImageLabel_2.Size = UDim2.new(0, 36, 0, 32)
+ImageLabel_2.Image = "rbxassetid://10767529216"
+
+ScrollingFrame.Parent = Console_2
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(-0.00298507465, 0, 0.135036498, 0)
+ScrollingFrame.Size = UDim2.new(0, 336, 0, 237)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 1, 0)
+ScrollingFrame.ScrollBarThickness = 7
+
+Console_3.Name = "Console"
+Console_3.Parent = ScrollingFrame
+Console_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Console_3.BackgroundTransparency = 1.000
+Console_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Console_3.Position = UDim2.new(0.00595238106, 0, -0.0031914562, 0)
+Console_3.Size = UDim2.new(0, 334, 0, 273)
+Console_3.ClearTextOnFocus = false
+Console_3.Font = Enum.Font.Nunito
+Console_3.MultiLine = true
+Console_3.Text = ""
+Console_3.TextColor3 = Color3.fromRGB(0, 179, 255)
+Console_3.TextScaled = true
+Console_3.TextSize = 14.000
+Console_3.TextWrapped = true
+
+-- Scripts:
+
+local function ALXZOW_fake_script() -- Main.Drag 
+	local script = Instance.new('LocalScript', Main)
+
+	--Credits go to whoever made this script.
+	
+	local UIS = game:GetService("UserInputService")
+	function drag (Frame)
+		dragToggle = nil
+		dragSpeed = 0.23
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	drag(script.Parent)
+	
+end
+coroutine.wrap(ALXZOW_fake_script)()
+local function SLNHLZ_fake_script() -- ScreenGui.Main 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	script.Parent.Name = math.random(1,999999)
+	local Main = script.Parent:FindFirstChild("Main")
+	local ExecuBox = Main:FindFirstChild("ExecuBox")
+	local Bottom = Main:FindFirstChild("Bottom")
+	
+	local Console = Bottom:FindFirstChild("Console")
+	local ExecuSS = Bottom:FindFirstChild("ExecSS")
+	local Clear = Bottom:FindFirstChild("Clear")
+	
+	Console.MouseButton1Down:Connect(function()
+		script.Parent.Console.Visible = true
+	end)
+	
+	ExecuSS.MouseButton1Down:Connect(function()
+		if game:GetService("Chat"):FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage") then
+			game:GetService("Chat"):FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage"):FireServer(ExecuBox.Text)
+		else
+			local StarterGui = game:GetService("StarterGui")
+			StarterGui:SetCore("SendNotification",{
+				Title = "Phobos",
+				Text = "Failed to find backdoor: BACKDOOR SUDDENLY REMOVED?",
+				Duration = 5
+			})
+		end
+	end)
+	
+	Clear.MouseButton1Down:Connect(function()
+		ExecuBox.Text = ""
+	end)
+end
+coroutine.wrap(SLNHLZ_fake_script)()
+local function ARTK_fake_script() -- Console_3.LocalScript 
+	local script = Instance.new('LocalScript', Console_3)
+
+	local logService = game:GetService("LogService")
+	logService.MessageOut:Connect(function(message, MessageType)
+		if script.Parent.Text == "Workspace.main:78: attempt to call a nil value " then
+			script.Parent.Text = ""
+		end
+		
+		if script.Parent.Text == "Workspace.main:78: attempt to call a nil value" then
+			script.Parent.Text = ""
+		end
+		if MessageType == Enum.MessageType.MessageError then
+			script.Parent.Text = script.Parent.Text.."\n Error: "..message
+		elseif MessageType == Enum.MessageType.MessageInfo then
+			script.Parent.Text = script.Parent.Text.."\n Info: "..message
+		elseif MessageType == Enum.MessageType.MessageOutput then
+			script.Parent.Text = script.Parent.Text.."\n "..message
+		elseif MessageType == Enum.MessageType.MessageWarning then
+			script.Parent.Text = script.Parent.Text.."\n Warning: "..message
+		end
+	end)
+end
+coroutine.wrap(ARTK_fake_script)()
+local function EDGTVN_fake_script() -- Console_2.Drag 
+	local script = Instance.new('LocalScript', Console_2)
+
+	--Credits go to whoever made this script.
+	
+	local UIS = game:GetService("UserInputService")
+	function drag (Frame)
+		dragToggle = nil
+		dragSpeed = 0.23
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	drag(script.Parent)
+	
+end
+coroutine.wrap(EDGTVN_fake_script)()
