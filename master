@@ -21,6 +21,8 @@ local UICorner_7 = Instance.new("UICorner")
 local ImageLabel = Instance.new("ImageLabel")
 local Close = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
+local Open = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
 
 --Properties:
 
@@ -138,9 +140,25 @@ Close.TextWrapped = true
 UICorner_8.CornerRadius = UDim.new(0, 3)
 UICorner_8.Parent = Close
 
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Open.Position = UDim2.new(0.00838414673, 0, 0.550420165, 0)
+Open.Size = UDim2.new(0, 74, 0, 25)
+Open.Visible = false
+Open.Font = Enum.Font.Unknown
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(0, 179, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 3)
+UICorner_9.Parent = Open
+
 -- Scripts:
 
-local function EPYJAH_fake_script() -- Main.Drag 
+local function VNIY_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	--Credits go to whoever made this script.
@@ -183,8 +201,8 @@ local function EPYJAH_fake_script() -- Main.Drag
 	drag(script.Parent)
 	
 end
-coroutine.wrap(EPYJAH_fake_script)()
-local function CWBO_fake_script() -- ScreenGui.Main 
+coroutine.wrap(VNIY_fake_script)()
+local function COLJXD_fake_script() -- ScreenGui.Main 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.Name = math.random(1,999999)
@@ -195,9 +213,11 @@ local function CWBO_fake_script() -- ScreenGui.Main
 	local ExecuSS = Bottom:FindFirstChild("ExecSS")
 	local Clear = Bottom:FindFirstChild("Clear")
 	local Respawn = Bottom:FindFirstChild("Respawn")
+	local X = Main:FindFirstChild("Top"):FindFirstChild("Close")
+	
 	local StarterGui = game:GetService("StarterGui")
 	local Other = ""
-	
+	script.Parent = game:GetService("CoreGui")
 	ExecuSS.MouseButton1Down:Connect(function()
 		Other = "Server"
 		if game:GetService("Chat"):FindFirstChild("ChatLocalizationService") then
@@ -244,5 +264,15 @@ local function CWBO_fake_script() -- ScreenGui.Main
 			})
 		end
 	end)
+	
+	X.MouseButton1Down:Connect(function()
+		Main.Visible = false
+		script.Parent.Open.Visible = true
+	end)
+	
+	script.Parent.Open.MouseButton1Down:Connect(function()
+		script.Parent.Open.Visible = false
+		Main.Visible = true
+	end)
 end
-coroutine.wrap(CWBO_fake_script)()
+coroutine.wrap(COLJXD_fake_script)()
