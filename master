@@ -201,18 +201,7 @@ local function NRCFRPQ_fake_script() -- ScreenGui.Main
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.Name = math.random(1,999999)
-	
-	
-	--------------------------- DO NOT EDIT THE SCRIPT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU ARE DOING ----------------------------------------------------------------------
-	
-	
-	
-	
-	
-	
-	
 	local player = game.Players.LocalPlayer
-	
 	local Main = script.Parent:FindFirstChild("Main")
 	local ExecuBox = Main:FindFirstChild("ExecuBox")
 	local Bottom = Main:FindFirstChild("Bottom")
