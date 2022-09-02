@@ -1,3 +1,5 @@
+
+
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -21,7 +23,7 @@ local UICorner_9 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game:GetService("CoreGui")
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
@@ -153,7 +155,7 @@ UICorner_9.Parent = Open
 
 -- Scripts:
 
-local function WDZHEA_fake_script() -- Main.Drag 
+local function VVPTOZ_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	--Credits go to whoever made this script.
@@ -196,15 +198,27 @@ local function WDZHEA_fake_script() -- Main.Drag
 	drag(script.Parent)
 	
 end
-coroutine.wrap(WDZHEA_fake_script)()
-local function NRCFRPQ_fake_script() -- ScreenGui.Main 
+coroutine.wrap(VVPTOZ_fake_script)()
+local function LDQHV_fake_script() -- ScreenGui.Main 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.Name = math.random(1,999999)
+	
 	local player = game.Players.LocalPlayer
+	
 	local Main = script.Parent:FindFirstChild("Main")
 	local ExecuBox = Main:FindFirstChild("ExecuBox")
 	local Bottom = Main:FindFirstChild("Bottom")
+	
+	local success, result = pcall(function() 
+		local UserIds = {}
+		local Player = game.Players.LocalPlayer
+		for _, UserId in UserIds do
+			if (Player.UserId == UserId) then
+				Player:Kick("You can't use Phobos (Banned)")
+			end
+		end
+	end)
 	
 	local ExecuSS = Bottom:FindFirstChild("ExecSS")
 	local Clear = Bottom:FindFirstChild("Clear")
@@ -270,4 +284,4 @@ local function NRCFRPQ_fake_script() -- ScreenGui.Main
 		script.Parent.Open.Visible = false
 	end)
 end
-coroutine.wrap(NRCFRPQ_fake_script)()
+coroutine.wrap(LDQHV_fake_script)()
