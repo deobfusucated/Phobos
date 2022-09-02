@@ -26,7 +26,7 @@ local UICorner_9 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
@@ -158,7 +158,7 @@ UICorner_9.Parent = Open
 
 -- Scripts:
 
-local function VNIY_fake_script() -- Main.Drag 
+local function WDZHEA_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	--Credits go to whoever made this script.
@@ -201,11 +201,23 @@ local function VNIY_fake_script() -- Main.Drag
 	drag(script.Parent)
 	
 end
-coroutine.wrap(VNIY_fake_script)()
-local function COLJXD_fake_script() -- ScreenGui.Main 
+coroutine.wrap(WDZHEA_fake_script)()
+local function NRCFRPQ_fake_script() -- ScreenGui.Main 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.Name = math.random(1,999999)
+	
+	
+	--------------------------- DO NOT EDIT THE SCRIPT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU ARE DOING ----------------------------------------------------------------------
+	
+	
+	
+	
+	
+	
+	
+	local player = game.Players.LocalPlayer
+	
 	local Main = script.Parent:FindFirstChild("Main")
 	local ExecuBox = Main:FindFirstChild("ExecuBox")
 	local Bottom = Main:FindFirstChild("Bottom")
@@ -217,7 +229,6 @@ local function COLJXD_fake_script() -- ScreenGui.Main
 	
 	local StarterGui = game:GetService("StarterGui")
 	local Other = ""
-	script.Parent = game:GetService("CoreGui")
 	ExecuSS.MouseButton1Down:Connect(function()
 		Other = "Server"
 		if game:GetService("Chat"):FindFirstChild("ChatLocalizationService") then
@@ -271,8 +282,8 @@ local function COLJXD_fake_script() -- ScreenGui.Main
 	end)
 	
 	script.Parent.Open.MouseButton1Down:Connect(function()
-		script.Parent.Open.Visible = false
 		Main.Visible = true
+		script.Parent.Open.Visible = false
 	end)
 end
-coroutine.wrap(COLJXD_fake_script)()
+coroutine.wrap(NRCFRPQ_fake_script)()
