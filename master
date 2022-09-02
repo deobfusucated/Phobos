@@ -13,13 +13,15 @@ local ExecSS = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local Respawn = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local Top = Instance.new("Frame")
+local R6 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
+local Top = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
 local ImageLabel = Instance.new("ImageLabel")
 local Close = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local Open = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
+local Open = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
 
 --Properties:
 
@@ -107,13 +109,28 @@ Respawn.TextWrapped = true
 UICorner_6.CornerRadius = UDim.new(0, 3)
 UICorner_6.Parent = Respawn
 
+R6.Name = "R6"
+R6.Parent = Bottom
+R6.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+R6.Position = UDim2.new(0.614251852, 0, 0.227315262, 0)
+R6.Size = UDim2.new(0, 33, 0, 23)
+R6.Font = Enum.Font.Nunito
+R6.Text = "R6"
+R6.TextColor3 = Color3.fromRGB(0, 179, 255)
+R6.TextScaled = true
+R6.TextSize = 14.000
+R6.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 3)
+UICorner_7.Parent = R6
+
 Top.Name = "Top"
 Top.Parent = Main
 Top.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Top.Size = UDim2.new(0, 460, 0, 38)
 
-UICorner_7.CornerRadius = UDim.new(0, 3)
-UICorner_7.Parent = Top
+UICorner_8.CornerRadius = UDim.new(0, 3)
+UICorner_8.Parent = Top
 
 ImageLabel.Parent = Top
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -134,8 +151,8 @@ Close.TextColor3 = Color3.fromRGB(0, 179, 255)
 Close.TextSize = 24.000
 Close.TextWrapped = true
 
-UICorner_8.CornerRadius = UDim.new(0, 3)
-UICorner_8.Parent = Close
+UICorner_9.CornerRadius = UDim.new(0, 3)
+UICorner_9.Parent = Close
 
 Open.Name = "Open"
 Open.Parent = ScreenGui
@@ -150,12 +167,12 @@ Open.TextScaled = true
 Open.TextSize = 14.000
 Open.TextWrapped = true
 
-UICorner_9.CornerRadius = UDim.new(0, 3)
-UICorner_9.Parent = Open
+UICorner_10.CornerRadius = UDim.new(0, 3)
+UICorner_10.Parent = Open
 
 -- Scripts:
 
-local function VVPTOZ_fake_script() -- Main.Drag 
+local function UBYPH_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	--Credits go to whoever made this script.
@@ -198,8 +215,8 @@ local function VVPTOZ_fake_script() -- Main.Drag
 	drag(script.Parent)
 	
 end
-coroutine.wrap(VVPTOZ_fake_script)()
-local function LDQHV_fake_script() -- ScreenGui.Main 
+coroutine.wrap(UBYPH_fake_script)()
+local function MFCB_fake_script() -- ScreenGui.Main 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.Name = math.random(1,999999)
@@ -224,6 +241,7 @@ local function LDQHV_fake_script() -- ScreenGui.Main
 	local Clear = Bottom:FindFirstChild("Clear")
 	local Respawn = Bottom:FindFirstChild("Respawn")
 	local X = Main:FindFirstChild("Top"):FindFirstChild("Close")
+	local R6 = Bottom:FindFirstChild("R6")
 	
 	local StarterGui = game:GetService("StarterGui")
 	local Other = ""
@@ -283,5 +301,27 @@ local function LDQHV_fake_script() -- ScreenGui.Main
 		Main.Visible = true
 		script.Parent.Open.Visible = false
 	end)
+	
+	R6.MouseButton1Down:Connect(function()
+		Other = "R6"
+		local plr = game.Players.LocalPlayer
+		if game:GetService("Chat"):FindFirstChild("ChatLocalizationService") then
+			if game:GetService("Chat"):FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage") then
+				game:GetService("Chat"):FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage"):FireServer(plr,Other)
+			else
+				StarterGui:SetCore("SendNotification",{
+					Title = "Phobos",
+					Text = "Failed to convert to R6: Is the backdoor outdated?",
+					Duration = 5
+				})
+			end
+		else
+			StarterGui:SetCore("SendNotification",{
+				Title = "Phobos",
+				Text = "Failed to convert to R6: BACKDOOR SUDDENLY REMOVED?",
+				Duration = 5
+			})
+		end
+	end)
 end
-coroutine.wrap(LDQHV_fake_script)()
+coroutine.wrap(MFCB_fake_script)()
