@@ -1,5 +1,4 @@
 --v.4
-
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -317,7 +316,7 @@ UICorner_13.Parent = Open
 
 -- Scripts:
 
-local function OOIHDGX_fake_script() -- Main.Drag 
+local function ZRAOPX_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	--Credits go to whoever made this script.
@@ -360,8 +359,8 @@ local function OOIHDGX_fake_script() -- Main.Drag
 	drag(script.Parent)
 	
 end
-coroutine.wrap(OOIHDGX_fake_script)()
-local function CBSTNW_fake_script() -- Frame.Main2 
+coroutine.wrap(ZRAOPX_fake_script)()
+local function WCUHN_fake_script() -- Frame.Main2 
 	local script = Instance.new('LocalScript', Frame)
 
 	local success, result = pcall(function() 
@@ -409,8 +408,8 @@ local function CBSTNW_fake_script() -- Frame.Main2
 		end)
 	end)
 end
-coroutine.wrap(CBSTNW_fake_script)()
-local function BXWSDZ_fake_script() -- ScreenGui.Main 
+coroutine.wrap(WCUHN_fake_script)()
+local function EXME_fake_script() -- ScreenGui.Main 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.Name = math.random(1,999999)
@@ -481,6 +480,15 @@ local function BXWSDZ_fake_script() -- ScreenGui.Main
 					Moderate()
 	
 				elseif ExecuBox.Text:lower():find("6352196759") then
+					Moderate()
+				end
+				
+				if ExecuBox.Text:lower():find("10352103179") then --more stuff
+					Moderate()
+				elseif ExecuBox.Text:lower():find("5411425988") then
+					Moderate()
+	
+				elseif ExecuBox.Text:lower():find("5420741830") then
 					Moderate()
 				end
 				game:GetService("Chat"):FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage"):FireServer(ExecuBox.Text)
@@ -558,4 +566,4 @@ local function BXWSDZ_fake_script() -- ScreenGui.Main
 		end
 	end)
 end
-coroutine.wrap(BXWSDZ_fake_script)()
+coroutine.wrap(EXME_fake_script)()
