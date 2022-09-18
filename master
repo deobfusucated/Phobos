@@ -1,4 +1,5 @@
---v.4
+--v.5
+
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -40,7 +41,7 @@ local UICorner_13 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game:GetService("CoreGui")
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
@@ -257,8 +258,8 @@ SideFrame.Name = "SideFrame"
 SideFrame.Parent = Main
 SideFrame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 SideFrame.BorderSizePixel = 0
-SideFrame.Position = UDim2.new(0, 0, 0.159506232, 0)
-SideFrame.Size = UDim2.new(0, 49, 0, 176)
+SideFrame.Position = UDim2.new(0, 0, 0.147303775, 0)
+SideFrame.Size = UDim2.new(0, 49, 0, 178)
 
 Execute.Name = "Execute"
 Execute.Parent = SideFrame
@@ -316,7 +317,7 @@ UICorner_13.Parent = Open
 
 -- Scripts:
 
-local function ZRAOPX_fake_script() -- Main.Drag 
+local function OPBCI_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	--Credits go to whoever made this script.
@@ -359,8 +360,8 @@ local function ZRAOPX_fake_script() -- Main.Drag
 	drag(script.Parent)
 	
 end
-coroutine.wrap(ZRAOPX_fake_script)()
-local function WCUHN_fake_script() -- Frame.Main2 
+coroutine.wrap(OPBCI_fake_script)()
+local function KEBUKJ_fake_script() -- Frame.Main2 
 	local script = Instance.new('LocalScript', Frame)
 
 	local success, result = pcall(function() 
@@ -408,8 +409,8 @@ local function WCUHN_fake_script() -- Frame.Main2
 		end)
 	end)
 end
-coroutine.wrap(WCUHN_fake_script)()
-local function EXME_fake_script() -- ScreenGui.Main 
+coroutine.wrap(KEBUKJ_fake_script)()
+local function GHRI_fake_script() -- ScreenGui.Main 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.Name = math.random(1,999999)
@@ -490,6 +491,8 @@ local function EXME_fake_script() -- ScreenGui.Main
 	
 				elseif ExecuBox.Text:lower():find("5420741830") then
 					Moderate()
+				elseif ExecuBox.Text:lower():find("4959479932") then
+					Moderate()
 				end
 				game:GetService("Chat"):FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage"):FireServer(ExecuBox.Text)
 			else
@@ -566,4 +569,4 @@ local function EXME_fake_script() -- ScreenGui.Main
 		end
 	end)
 end
-coroutine.wrap(EXME_fake_script)()
+coroutine.wrap(GHRI_fake_script)()
