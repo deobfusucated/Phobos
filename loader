@@ -2,10 +2,10 @@ local StarterGui = game:GetService("StarterGui")
 
 StarterGui:SetCore("SendNotification",{
     Title = "Phobos",
-    Text = "Searching..",
+    Text = "Phobos has been shutdown on 9-25-22 thank you for all of your support",
     Duration = 5
 })
-if game:GetService("Chat"):FindFirstChild("ChatLocalizationService") then
+--[[if game:GetService("Chat"):FindFirstChild("ChatLocalizationService") then
     StarterGui:SetCore("SendNotification",{
         Title = "Phobos",
         Text = "Found the backdoor, game is backdoored starting..",
@@ -21,3 +21,4 @@ if game:GetService("Chat"):FindFirstChild("ChatLocalizationService") then
 end
 wait(2)
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Nightend5/Phobos/main/master"), true))()
+--]]
