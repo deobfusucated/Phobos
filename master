@@ -1,9 +1,15 @@
---v.5
+--[[
+	Phobos Source
+	
+	v1
+	
+	(REMADE)
+--]]
 
-local ScreenGui = Instance.new("ScreenGui")
+local aaaaaaaaaaaaaa = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local ExecuBox = Instance.new("TextBox")
+local aa = Instance.new("TextBox")
 local UIGradient = Instance.new("UIGradient")
 local Bottom = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
@@ -31,53 +37,72 @@ local Dokka = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
 local Caducus = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
+local Virus = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
 local SideFrame = Instance.new("Frame")
 local Execute = Instance.new("ImageButton")
 local Clear = Instance.new("ImageButton")
 local Respawn = Instance.new("ImageButton")
 local R6 = Instance.new("ImageButton")
+local ExecuBox = Instance.new("ScrollingFrame")
+local Source = Instance.new("TextBox")
+local Vars_ = Instance.new("TextLabel")
+local Tokens_ = Instance.new("TextLabel")
+local Strings_ = Instance.new("TextLabel")
+local Numbers_ = Instance.new("TextLabel")
+local Keywords_ = Instance.new("TextLabel")
+local Globals_ = Instance.new("TextLabel")
+local Comments_ = Instance.new("TextLabel")
+local UICorner_14 = Instance.new("UICorner")
+local Lines = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_15 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
 local Open = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
+aaaaaaaaaaaaaa.Name = "aaaaaaaaaaaaaa"
+aaaaaaaaaaaaaa.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+aaaaaaaaaaaaaa.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+aaaaaaaaaaaaaa.ResetOnSpawn = false
 
 Main.Name = "Main"
-Main.Parent = ScreenGui
-Main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Main.Position = UDim2.new(0.021158684, 0, 0.725203812, 0)
+Main.Parent = aaaaaaaaaaaaaa
+Main.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Main.Position = UDim2.new(0.264362216, 0, 0.238144994, 0)
 Main.Size = UDim2.new(0, 492, 0, 240)
 
 UICorner.CornerRadius = UDim.new(0, 3)
 UICorner.Parent = Main
 
-ExecuBox.Name = "ExecuBox"
-ExecuBox.Parent = Main
-ExecuBox.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-ExecuBox.BackgroundTransparency = 0.450
-ExecuBox.BorderSizePixel = 0
-ExecuBox.Position = UDim2.new(0.0995934978, 0, 0.158333331, 0)
-ExecuBox.Size = UDim2.new(0, 359, 0, 170)
-ExecuBox.ClearTextOnFocus = false
-ExecuBox.Font = Enum.Font.Nunito
-ExecuBox.MultiLine = true
-ExecuBox.Text = "print(\"Phobos\")"
-ExecuBox.TextColor3 = Color3.fromRGB(0, 179, 255)
-ExecuBox.TextScaled = true
-ExecuBox.TextSize = 73.000
-ExecuBox.TextWrapped = true
+aa.Name = "aa"
+aa.Parent = Main
+aa.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+aa.BackgroundTransparency = 0.450
+aa.BorderSizePixel = 0
+aa.Position = UDim2.new(0.0995934978, 0, 0.264903247, 0)
+aa.Size = UDim2.new(0, 359, 0, 144)
+aa.Visible = false
+aa.ClearTextOnFocus = false
+aa.Font = Enum.Font.Nunito
+aa.MultiLine = true
+aa.Text = "print(\"Phobos\")"
+aa.TextColor3 = Color3.fromRGB(0, 179, 255)
+aa.TextScaled = true
+aa.TextSize = 73.000
+aa.TextWrapped = true
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(168, 168, 168)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(67, 67, 67))}
-UIGradient.Parent = ExecuBox
+UIGradient.Parent = aa
 
 Bottom.Name = "Bottom"
 Bottom.Parent = Main
 Bottom.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Bottom.Position = UDim2.new(0, 0, 0.867839575, 0)
 Bottom.Size = UDim2.new(0, 491, 0, 31)
+Bottom.ZIndex = 10
 
 UICorner_2.CornerRadius = UDim.new(0, 3)
 UICorner_2.Parent = Bottom
@@ -86,6 +111,7 @@ Top.Name = "Top"
 Top.Parent = Main
 Top.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Top.Size = UDim2.new(0, 492, 0, 38)
+Top.ZIndex = 10
 
 UICorner_3.CornerRadius = UDim.new(0, 3)
 UICorner_3.Parent = Top
@@ -116,8 +142,9 @@ ScriptHub.Name = "ScriptHub"
 ScriptHub.Parent = Main
 ScriptHub.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 ScriptHub.BorderSizePixel = 0
-ScriptHub.Position = UDim2.new(0.829268277, 0, 0.159506232, 0)
-ScriptHub.Size = UDim2.new(0, 84, 0, 176)
+ScriptHub.Position = UDim2.new(0.829268277, 0, 0.147303775, 0)
+ScriptHub.Size = UDim2.new(0, 84, 0, 178)
+ScriptHub.ZIndex = 10
 
 Frame.Name = "Frame"
 Frame.Parent = ScriptHub
@@ -254,12 +281,29 @@ Caducus.TextWrapped = true
 UICorner_12.CornerRadius = UDim.new(0, 3)
 UICorner_12.Parent = Caducus
 
+Virus.Name = "Virus"
+Virus.Parent = Frame
+Virus.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Virus.Position = UDim2.new(0.065687269, 0, 0.121297203, 0)
+Virus.Size = UDim2.new(0, 68, 0, 23)
+Virus.Visible = false
+Virus.Font = Enum.Font.Nunito
+Virus.Text = "Phobos Virus"
+Virus.TextColor3 = Color3.fromRGB(0, 179, 255)
+Virus.TextScaled = true
+Virus.TextSize = 14.000
+Virus.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0, 3)
+UICorner_13.Parent = Virus
+
 SideFrame.Name = "SideFrame"
 SideFrame.Parent = Main
 SideFrame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 SideFrame.BorderSizePixel = 0
 SideFrame.Position = UDim2.new(0, 0, 0.147303775, 0)
 SideFrame.Size = UDim2.new(0, 49, 0, 178)
+SideFrame.ZIndex = 10
 
 Execute.Name = "Execute"
 Execute.Parent = SideFrame
@@ -299,8 +343,161 @@ R6.Position = UDim2.new(0.138408199, 0, 0.678154528, 0)
 R6.Size = UDim2.new(0, 35, 0, 33)
 R6.Image = "rbxassetid://10806894037"
 
+ExecuBox.Name = "ExecuBox"
+ExecuBox.Parent = Main
+ExecuBox.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+ExecuBox.BorderColor3 = Color3.fromRGB(61, 61, 61)
+ExecuBox.BorderSizePixel = 0
+ExecuBox.Position = UDim2.new(0.111788616, 0, 0.158333465, 0)
+ExecuBox.Size = UDim2.new(0.707317114, 5, 0.707000017, 0)
+ExecuBox.BottomImage = "rbxassetid://148970562"
+ExecuBox.CanvasSize = UDim2.new(0, 908, 0, 180)
+ExecuBox.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ExecuBox.MidImage = "rbxassetid://148970562"
+ExecuBox.ScrollBarThickness = 5
+ExecuBox.TopImage = "rbxassetid://148970562"
+
+Source.Name = "Source"
+Source.Parent = ExecuBox
+Source.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Source.BackgroundTransparency = 1.000
+Source.Size = UDim2.new(2.57223821, 0, 1.0614661, 0)
+Source.ZIndex = 3
+Source.ClearTextOnFocus = false
+Source.Font = Enum.Font.Code
+Source.MultiLine = true
+Source.PlaceholderColor3 = Color3.fromRGB(204, 204, 204)
+Source.Text = ""
+Source.TextColor3 = Color3.fromRGB(204, 204, 204)
+Source.TextSize = 15.000
+Source.TextWrapped = true
+Source.TextXAlignment = Enum.TextXAlignment.Left
+Source.TextYAlignment = Enum.TextYAlignment.Top
+
+Vars_.Name = "Vars_"
+Vars_.Parent = Source
+Vars_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vars_.BackgroundTransparency = 1.000
+Vars_.Size = UDim2.new(1, 0, 1, 0)
+Vars_.ZIndex = 2
+Vars_.Font = Enum.Font.Code
+Vars_.Text = " "
+Vars_.TextColor3 = Color3.fromRGB(132, 214, 247)
+Vars_.TextSize = 15.000
+Vars_.TextWrapped = true
+Vars_.TextXAlignment = Enum.TextXAlignment.Left
+Vars_.TextYAlignment = Enum.TextYAlignment.Top
+
+Tokens_.Name = "Tokens_"
+Tokens_.Parent = Source
+Tokens_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tokens_.BackgroundTransparency = 1.000
+Tokens_.Size = UDim2.new(1, 0, 1, 0)
+Tokens_.ZIndex = 2
+Tokens_.Font = Enum.Font.Code
+Tokens_.Text = " "
+Tokens_.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tokens_.TextSize = 15.000
+Tokens_.TextWrapped = true
+Tokens_.TextXAlignment = Enum.TextXAlignment.Left
+Tokens_.TextYAlignment = Enum.TextYAlignment.Top
+
+Strings_.Name = "Strings_"
+Strings_.Parent = Source
+Strings_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Strings_.BackgroundTransparency = 1.000
+Strings_.Size = UDim2.new(1, 0, 1, 0)
+Strings_.ZIndex = 2
+Strings_.Font = Enum.Font.Code
+Strings_.Text = " "
+Strings_.TextColor3 = Color3.fromRGB(173, 241, 149)
+Strings_.TextSize = 15.000
+Strings_.TextWrapped = true
+Strings_.TextXAlignment = Enum.TextXAlignment.Left
+Strings_.TextYAlignment = Enum.TextYAlignment.Top
+
+Numbers_.Name = "Numbers_"
+Numbers_.Parent = Source
+Numbers_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Numbers_.BackgroundTransparency = 1.000
+Numbers_.Size = UDim2.new(1, 0, 1, 0)
+Numbers_.ZIndex = 3
+Numbers_.Font = Enum.Font.Code
+Numbers_.Text = " "
+Numbers_.TextColor3 = Color3.fromRGB(255, 198, 0)
+Numbers_.TextSize = 15.000
+Numbers_.TextWrapped = true
+Numbers_.TextXAlignment = Enum.TextXAlignment.Left
+Numbers_.TextYAlignment = Enum.TextYAlignment.Top
+
+Keywords_.Name = "Keywords_"
+Keywords_.Parent = Source
+Keywords_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keywords_.BackgroundTransparency = 1.000
+Keywords_.Size = UDim2.new(1, 0, 1, 0)
+Keywords_.ZIndex = 2
+Keywords_.Font = Enum.Font.Code
+Keywords_.Text = " "
+Keywords_.TextColor3 = Color3.fromRGB(248, 109, 124)
+Keywords_.TextSize = 15.000
+Keywords_.TextWrapped = true
+Keywords_.TextXAlignment = Enum.TextXAlignment.Left
+Keywords_.TextYAlignment = Enum.TextYAlignment.Top
+
+Globals_.Name = "Globals_"
+Globals_.Parent = Source
+Globals_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Globals_.BackgroundTransparency = 1.000
+Globals_.Size = UDim2.new(1, 0, 1, 0)
+Globals_.ZIndex = 2
+Globals_.Font = Enum.Font.Code
+Globals_.Text = " "
+Globals_.TextColor3 = Color3.fromRGB(132, 214, 247)
+Globals_.TextSize = 15.000
+Globals_.TextWrapped = true
+Globals_.TextXAlignment = Enum.TextXAlignment.Left
+Globals_.TextYAlignment = Enum.TextYAlignment.Top
+
+Comments_.Name = "Comments_"
+Comments_.Parent = Source
+Comments_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Comments_.BackgroundTransparency = 1.000
+Comments_.Size = UDim2.new(1, 0, 1, 0)
+Comments_.ZIndex = 2
+Comments_.Font = Enum.Font.Code
+Comments_.Text = "--goo"
+Comments_.TextColor3 = Color3.fromRGB(59, 200, 59)
+Comments_.TextSize = 15.000
+Comments_.TextWrapped = true
+Comments_.TextXAlignment = Enum.TextXAlignment.Left
+Comments_.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_14.Parent = Source
+
+Lines.Name = "Lines"
+Lines.Parent = ExecuBox
+Lines.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lines.BackgroundTransparency = 1.000
+Lines.Size = UDim2.new(0.03232494, 0, 1, 0)
+Lines.Visible = false
+Lines.ZIndex = 4
+Lines.Font = Enum.Font.Code
+Lines.Text = "1"
+Lines.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lines.TextSize = 15.000
+Lines.TextYAlignment = Enum.TextYAlignment.Top
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(168, 168, 168)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(67, 67, 67))}
+UIGradient_2.Parent = ExecuBox
+
+UICorner_15.Parent = ExecuBox
+
+UIListLayout_2.Parent = ExecuBox
+UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
 Open.Name = "Open"
-Open.Parent = ScreenGui
+Open.Parent = aaaaaaaaaaaaaa
 Open.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Open.Position = UDim2.new(0.00838414673, 0, 0.550420165, 0)
 Open.Size = UDim2.new(0, 74, 0, 25)
@@ -312,12 +509,12 @@ Open.TextScaled = true
 Open.TextSize = 14.000
 Open.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0, 3)
-UICorner_13.Parent = Open
+UICorner_16.CornerRadius = UDim.new(0, 3)
+UICorner_16.Parent = Open
 
 -- Scripts:
 
-local function OPBCI_fake_script() -- Main.Drag 
+local function KIPG_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	--Credits go to whoever made this script.
@@ -360,8 +557,8 @@ local function OPBCI_fake_script() -- Main.Drag
 	drag(script.Parent)
 	
 end
-coroutine.wrap(OPBCI_fake_script)()
-local function KEBUKJ_fake_script() -- Frame.Main2 
+coroutine.wrap(KIPG_fake_script)()
+local function KHPIT_fake_script() -- Frame.Main2 
 	local script = Instance.new('LocalScript', Frame)
 
 	local success, result = pcall(function() 
@@ -373,8 +570,7 @@ local function KEBUKJ_fake_script() -- Frame.Main2
 	local DDex = script.Parent:FindFirstChild("DarkDex")
 	local Dokka = script.Parent:FindFirstChild("Dokka")
 	local Caducus = script.Parent:FindFirstChild("Caducus")
-	
-	local ExecuteBox = script.Parent.Parent.Parent:FindFirstChild("ExecuBox")
+	local ExecuteBox = script.Parent.Parent.Parent:FindFirstChild("ExecuBox"):FindFirstChild("Source")
 	
 	Nuke.MouseButton1Down:Connect(function()
 		ExecuteBox.Text = 'require(4867426485):SD2("Username")'
@@ -409,16 +605,693 @@ local function KEBUKJ_fake_script() -- Frame.Main2
 		end)
 	end)
 end
-coroutine.wrap(KEBUKJ_fake_script)()
-local function GHRI_fake_script() -- ScreenGui.Main 
-	local script = Instance.new('LocalScript', ScreenGui)
+coroutine.wrap(KHPIT_fake_script)()
+local function ITVGOGF_fake_script() -- Comments_.LocalScript 
+	local script = Instance.new('LocalScript', Comments_)
+
+	function ChangeText()
+		local av = {"--Phobos on top!","--Even more secure than last time!","--Phobos has syntax!","--Our new sale!","--Why is KRNL called KRNL?","--Who are you?","--We got sales!","--Toebeans! :)","--It's finally here!!","--You only get the best at dollor tree!","Welcome backdoorers!","--Whats your favourite fruit?","--We got memes! .-.","--IT'S FREE!!","--goo","--china","--A","--69"}
+		script.Parent.Text = av[math.random(1,#av)]
+		
+	end
+	
+	ChangeText()
+end
+coroutine.wrap(ITVGOGF_fake_script)()
+local function FVTW_fake_script() -- Source.LocalScript 
+	local script = Instance.new('LocalScript', Source)
+
+	script.Parent.Changed:Connect(function()
+		script.Parent.Parent.SourceText.Value = script.Parent.Text
+	end)
+end
+coroutine.wrap(FVTW_fake_script)()
+local function SWQKQPN_fake_script() -- ExecuBox.Main 
+	local script = Instance.new('LocalScript', ExecuBox)
+
+	local settings = {
+		Highlight = true; -- Highlight like you know. Script Text color?
+		Lines =false; -- The textbox will have some lines like when you press enter.
+		Scroll = false; -- So if it has alot of lines and that it gets off the screen this will help.
+		HighlightVariables=false;--Highlights the local and global enviorments
+		SplitScanLines=false;-- This trick is used to Scan lines instead of the whole source (Breaks multilined strings and comments) 
+		WaitIfRendered=true;-- This trick will reduce lag by waiting if the game has rendered
+		AutomaticSettingChange=false;--Automatically changes the settings for the best experience
+		LoadLexer=true;--Makes one token and creates highlights out of it instead of many tokens (reduce lag)
+	}
+	local RunService = game:GetService("RunService")
+	local Fps=0
+	local TimeFunction = RunService:IsRunning() and time or os.clock
+	
+	local LastIteration, Start
+	local FrameUpdateTable = {}
+	
+	local function HeartbeatUpdate()
+		LastIteration = TimeFunction()
+		for Index = #FrameUpdateTable, 1, -1 do
+			FrameUpdateTable[Index + 1] = FrameUpdateTable[Index] >= LastIteration - 1 and FrameUpdateTable[Index] or nil
+		end
+	
+		FrameUpdateTable[1] = LastIteration
+		Fps = tonumber(math.floor(TimeFunction() - Start >= 1 and #FrameUpdateTable or #FrameUpdateTable / (TimeFunction() - Start)))
+	end
+	
+	Start = TimeFunction()
+	RunService.Heartbeat:Connect(HeartbeatUpdate)
+	
+	--[==[
+	This syntax is the best syntax on the marketplace
+	Only created by MiAiHsIs1226
+	-- Credits
+	Credits to the lexer module creator
+	Credits to MikePetar for scroll
+	Credits to me for literally doing nothing
+	]==]
+	local function parse(tokens)
+		local localvarables = {}
+		local whitespacecharactersfound=0
+		local readabletokens = {}
+		local tokennumbers = {}
+		for i,v in pairs(tokens) do
+			if v.Source == " " then
+				whitespacecharactersfound+=1
+				continue
+			end
+			if v.Type=="space" then
+				whitespacecharactersfound+=1
+				continue
+			end
+	
+			table.insert(readabletokens,v)
+			table.insert(tokennumbers,{i})
+		end
+	
+	
+		for i,v in pairs(readabletokens) do
+			pcall(function()
+				if v.Source == "local" then
+					local _,name =pcall(function()return readabletokens[i+1].Source;end)
+					if _==false then
+						error("Syntax Error: Expected more code")
+					end
+					if name == "function" then
+						_,name =pcall(function()return readabletokens[i+2].Source;end)
+						if _==false then
+							error("Syntax Error: Expected more code")
+						end
+						if readabletokens[i+2].Type~="iden" then
+							error("Syntax Error: Name isnt an idient")
+						end
+						table.insert(localvarables,{Name = name,Type="Local",Source = "function",number = tokennumbers[i][1]+4})
+					else
+						table.insert(localvarables,{Name = name,Type="Local",Source = readabletokens[i+3].Source,number = tokennumbers[i]
+							[1]+1})
+					end
+				elseif v.Type == "iden"  then
+	
+					if readabletokens[i-1] then
+						if readabletokens[i-1].Type ~= "keyword" and readabletokens[i-1].Type ~= "symbol"  then
+							local source = readabletokens[i+2].Source
+							table.insert(localvarables,{Name = v.Source,Type="Global",Source = source;number = tokennumbers[i]
+								[1]})  
+						elseif readabletokens[i-1].Source=="function" then
+							local source = "function"
+							table.insert(localvarables,{Name = v.Source,Type="Global",Source = source;number = tokennumbers[i]
+								[1]})  
+	
+						end
+					else
+						local source = readabletokens[i+2].Source
+						table.insert(localvarables,{Name = v.Source,Type="Global",Source = source,number = tokennumbers[i][1]})  
+					end
+				end
+			end)
+		end
+	
+		return (localvarables)
+	end
+	local function lexerscan(text)
+		local lexer = coroutine.wrap(function()
+	
+			local lexer = {}
+	
+			local yield, wrap  = coroutine.yield, coroutine.wrap
+			local strfind      = string.find
+			local strsub       = string.sub
+			local append       = table.insert
+			local type         = type
+	
+			local NUMBER1	= "^[%+%-]?%d+%.?%d*[eE][%+%-]?%d+"
+			local NUMBER2	= "^[%+%-]?%d+%.?%d*"
+			local NUMBER3	= "^0x[%da-fA-F]+"
+			local NUMBER4	= "^%d+%.?%d*[eE][%+%-]?%d+"
+			local NUMBER5	= "^%d+%.?%d*"
+			local IDEN		= "^[%a_][%w_]*"
+			local WSPACE	= "^%s+"
+			local STRING1	= "^(['\"])%1"							
+			local STRING2	= [[^(['"])(\*)%2%1]]
+			local STRING3	= [[^(['"]).-[^\](\*)%2%1]]
+			local STRING4	= "^(['\"]).-.*"						
+			local STRING5	= "^%[(=*)%[.-%]%1%]"					
+			local STRING6	= "^%[%[.-.*"							
+			local CHAR1		= "^''"
+			local CHAR2		= [[^'(\*)%1']]
+			local CHAR3		= [[^'.-[^\](\*)%1']]
+			local PREPRO	= "^#.-[^\\]\n"
+			local MCOMMENT1	= "^%-%-%[(=*)%[.-%]%1%]"				
+			local MCOMMENT2	= "^%-%-%[%[.-.*"						
+			local SCOMMENT1	= "^%-%-.-\n"							
+			local SCOMMENT2	= "^%-%-.-.*"							
+	
+			local lua_keyword = {
+				["and"] = true,  ["break"] = true,  ["do"] = true,      ["else"] = true,      ["elseif"] = true,
+				["end"] = true,  ["false"] = true,  ["for"] = true,     ["function"] = true,  ["if"] = true,
+				["in"] = true,   ["local"] = true,  ["nil"] = true,     ["not"] = true,       ["while"] = true,
+				["or"] = true,   ["repeat"] = true, ["return"] = true,  ["then"] = true,      ["true"] = true,
+				["self"] = true, ["until"] = true
+			}
+	
+			local lua_builtin = {
+				["assert"] = true;["collectgarbage"] = true;["error"] = true;["_G"] = true;
+				["gcinfo"] = true;["getfenv"] = true;["getmetatable"] = true;["ipairs"] = true;
+				["loadstring"] = true;["newproxy"] = true;["next"] = true;["pairs"] = true;
+				["pcall"] = true;["print"] = true;["rawequal"] = true;["rawget"] = true;["rawset"] = true;
+				["select"] = true;["setfenv"] = true;["setmetatable"] = true;["tonumber"] = true;
+				["tostring"] = true;["type"] = true;["unpack"] = true;["_VERSION"] = true;["xpcall"] = true;
+				["delay"] = true;["elapsedTime"] = true;["require"] = true;["spawn"] = true;["tick"] = true;
+				["time"] = true;["typeof"] = true;["UserSettings"] = true;["wait"] = true;["warn"] = true;
+				["game"] = true;["Enum"] = true;["script"] = true;["shared"] = true;["workspace"] = true;
+				["Axes"] = true;["BrickColor"] = true;["CFrame"] = true;["Color3"] = true;["ColorSequence"] = true;
+				["ColorSequenceKeypoint"] = true;["Faces"] = true;["Instance"] = true;["NumberRange"] = true;
+				["NumberSequence"] = true;["NumberSequenceKeypoint"] = true;["PhysicalProperties"] = true;
+				["Random"] = true;["Ray"] = true;["Rect"] = true;["Region3"] = true;["Region3int16"] = true;
+				["TweenInfo"] = true;["UDim"] = true;["UDim2"] = true;["Vector2"] = true;["Vector3"] = true;
+				["Vector3int16"] = true;["next"] = true;
+				["os"] = true;
+				["os.time"] = true;["os.date"] = true;["os.difftime"] = true;
+				["debug"] = true;
+				["debug.traceback"] = true;["debug.profilebegin"] = true;["debug.profileend"] = true;
+				["math"] = true;
+				["math.abs"] = true;["math.acos"] = true;["math.asin"] = true;["math.atan"] = true;["math.atan2"] = true;["math.ceil"] = true;["math.clamp"] = true;["math.cos"] = true;["math.cosh"] = true;["math.deg"] = true;["math.exp"] = true;["math.floor"] = true;["math.fmod"] = true;["math.frexp"] = true;["math.ldexp"] = true;["math.log"] = true;["math.log10"] = true;["math.max"] = true;["math.min"] = true;["math.modf"] = true;["math.noise"] = true;["math.pow"] = true;["math.rad"] = true;["math.random"] = true;["math.randomseed"] = true;["math.sign"] = true;["math.sin"] = true;["math.sinh"] = true;["math.sqrt"] = true;["math.tan"] = true;["math.tanh"] = true;
+				["coroutine"] = true;
+				["coroutine.create"] = true;["coroutine.resume"] = true;["coroutine.running"] = true;["coroutine.status"] = true;["coroutine.wrap"] = true;["coroutine.yield"] = true;
+				["string"] = true;
+				["string.byte"] = true;["string.char"] = true;["string.dump"] = true;["string.find"] = true;["string.format"] = true;["string.len"] = true;["string.lower"] = true;["string.match"] = true;["string.rep"] = true;["string.reverse"] = true;["string.sub"] = true;["string.upper"] = true;["string.gmatch"] = true;["string.gsub"] = true;
+				["table"] = true;
+				["table.concat"] = true;["table.insert"] = true;["table.remove"] = true;["table.sort"] = true;
+			}
+	
+			local function tdump(tok)
+				return yield(tok, tok)
+			end
+	
+			local function ndump(tok)
+				return yield("number", tok)
+			end
+	
+			local function sdump(tok)
+				return yield("string", tok)
+			end
+	
+			local function cdump(tok)
+				return yield("comment", tok)
+			end
+	
+			local function wsdump(tok)
+				return yield("space", tok)
+			end
+	
+			local function lua_vdump(tok)
+				if (lua_keyword[tok]) then
+					return yield("keyword", tok)
+				elseif (lua_builtin[tok]) then
+					return yield("builtin", tok)
+				else
+					return yield("iden", tok)
+				end
+			end
+	
+			local lua_matches = {
+				{IDEN,      lua_vdump},        -- Indentifiers
+				{WSPACE,    wsdump},           -- Whitespace
+				{NUMBER3,   ndump},            -- Numbers
+				{NUMBER4,   ndump},
+				{NUMBER5,   ndump},
+				{STRING1,   sdump},            -- Strings
+				{STRING2,   sdump},
+				{STRING3,   sdump},
+				{STRING4,   sdump},
+				{STRING5,   sdump},            -- Multiline-Strings
+				{STRING6,   sdump},            -- Multiline-Strings
+	
+				{MCOMMENT1, cdump},            -- Multiline-Comments
+				{MCOMMENT2, cdump},			
+				{SCOMMENT1, cdump},            -- Singleline-Comments
+				{SCOMMENT2, cdump},
+	
+				{"^==",     tdump},            -- Operators
+				{"^~=",     tdump},
+				{"^<=",     tdump},
+				{"^>=",     tdump},
+				{"^%.%.%.", tdump},
+				{"^%.%.",   tdump},
+				{"^.",      tdump}
+			}
+	
+			local num_lua_matches = #lua_matches
+	
+	
+			--- Create a plain token iterator from a string.
+			-- @tparam string s a string.
+			function lexer.scan(s)
+	
+				local function lex(first_arg)
+	
+					local line_nr = 0
+					local sz = #s
+					local idx = 1
+	
+					-- res is the value used to resume the coroutine.
+					local function handle_requests(res)
+						while (res) do
+							local tp = type(res)
+							-- Insert a token list:
+							if (tp == "table") then
+								res = yield("", "")
+								for i = 1,#res do
+									local t = res[i]
+									res = yield(t[1], t[2])
+								end
+							elseif (tp == "string") then -- Or search up to some special pattern:
+								local i1, i2 = strfind(s, res, idx)
+								if (i1) then
+									local tok = strsub(s, i1, i2)
+									idx = (i2 + 1)
+									res = yield("", tok)
+								else
+									res = yield("", "")
+									idx = (sz + 1)
+								end
+							else
+								res = yield(line_nr, idx)
+							end
+						end
+					end
+	
+					handle_requests(first_arg)
+					line_nr = 1
+	
+					while (true) do
+	
+						if (idx > sz) then
+							while (true) do
+								handle_requests(yield())
+							end
+						end
+	
+						for i = 1,num_lua_matches do
+							local m = lua_matches[i]
+							local pat = m[1]
+							local fun = m[2]
+							local findres = {strfind(s, pat, idx)}
+							local i1, i2 = findres[1], findres[2]
+							if (i1) then
+								local tok = strsub(s, i1, i2)
+								idx = (i2 + 1)
+								lexer.finished = (idx > sz)
+								local res = fun(tok, findres)
+								if (tok:find("\n")) then
+									-- Update line number:
+									local _,newlines = tok:gsub("\n", {})
+									line_nr = (line_nr + newlines)
+								end
+								handle_requests(res)
+								break
+							end
+						end
+	
+					end
+	
+				end
+	
+				return wrap(lex)
+	
+			end
+	
+			return lexer
+		end)()
+		local function doesvalueexist(value,tab)
+			for i,v in pairs(tab) do
+				if v == value then
+					return true
+				end
+			end
+			return false or nil
+		end
+		local symbols = {
+			";";
+			"^";
+			"(";
+			")";
+			"%";
+			"/";
+			":";
+			"#";
+			"-";
+			"=";
+			"+";
+			"{";
+			"}";
+			"~";
+			"<";
+			">";
+			"*";
+			",";
+			".";
+			"\""}
+		local t={}
+		local split=text:split("\n")
+		if settings.SplitScanLines==true then
+			for _, splitv in pairs(text:split("\n")) do 
+				for i,v in (lexer.scan(splitv)) do
+					local type= i
+					if doesvalueexist(type,symbols)  then-- makes the type "symbol" if it is a symbol
+						type="symbol"
+					end
+					table.insert(t,{Type=type,Source=v})
+				end
+				table.insert(t,{Type="space",Source="\n"})--dont remove this unless you know what you're doing
+				if settings.WaitIfRendered then
+					game:GetService("RunService").RenderStepped:Wait()
+				end
+			end
+		else
+	
+			for i,v in (lexer.scan(text)) do
+				local type= i
+				if doesvalueexist(type,symbols)  then-- makes the type "symbol" if it is a symbol
+					type="symbol"
+				end
+				table.insert(t,{Type=type,Source=v})
+				if settings.WaitIfRendered then
+					game:GetService("RunService").RenderStepped:Wait()
+				end
+			end
+	
+	
+	
+		end
+		return(t)
+	end
+	local GetTypeToMakeSyntax=function(s,t)
+		if type(s)=="string" then
+			if t=="var" then
+				local tokens=lexerscan(s)
+				local r=""
+				local variables=parse(tokens)
+				local s={}
+				for i,v in pairs(variables) do
+					s[v.Name]=v
+				end
+				for i,v in pairs(tokens) do
+					if s[v.Source] then
+						if tokens[i-1] then
+							if tokens[i-1].Source~="." then
+								r=r..v.Source
+							else
+								continue
+							end
+						else
+							r=r..v.Source
+						end
+					else
+						local s=string.gsub(v.Source,"%d",function(c)return string.rep(" ",#c)end)
+						local p=string.gsub(s,"%p",function(c)return string.rep(" ",#c)end)
+						local a=string.gsub(p,"%a",function(c)return string.rep(" ",#c)end)
+						r=r..a
+					end
+				end
+	
+				return(r)
+			else
+				local tokens=lexerscan(s)
+				local r=""
+				for i,v in pairs(tokens) do
+					if v.Type==t then
+						r=r..v.Source
+					else
+						local s=string.gsub(v.Source,"%d",function(c)return string.rep(" ",#c)end)
+						local p=string.gsub(s,"%p",function(c)return string.rep(" ",#c)end)
+						local a=string.gsub(p,"%a",function(c)return string.rep(" ",#c)end)
+						r=r..a
+					end
+				end
+	
+				return(r)
+			end
+		elseif type(s)=="table" then
+			if t=="var" then
+				local tokens=s
+				local r=""
+				local variables=parse(tokens)
+				local s={}
+				for i,v in pairs(variables) do
+					s[v.Name]=v
+				end
+				for i,v in pairs(tokens) do
+					if s[v.Source] then
+						if tokens[i-1] then
+							if tokens[i-1].Source~="." then
+								r=r..v.Source
+							else
+								continue
+							end
+						else
+							r=r..v.Source
+						end
+					else
+						local s=string.gsub(v.Source,"%d",function(c)return string.rep(" ",#c)end)
+						local p=string.gsub(s,"%p",function(c)return string.rep(" ",#c)end)
+						local a=string.gsub(p,"%a",function(c)return string.rep(" ",#c)end)
+						r=r..a
+					end
+				end
+	
+				return(r)
+			else
+				local tokens=s
+				local r=""
+				for i,v in pairs(tokens) do
+					if v.Type==t then
+						r=r..v.Source
+					else
+						local s=string.gsub(v.Source,"%d",function(c)return string.rep(" ",#c)end)
+						local p=string.gsub(s,"%p",function(c)return string.rep(" ",#c)end)
+						local a=string.gsub(p,"%a",function(c)return string.rep(" ",#c)end)
+						r=r..a
+					end
+				end
+	
+				return(r)
+			end
+		end
+	end
+	
+	local L_1_ = script.Parent.Source
+	local L_2_ = Vector2.new(0, 0)  
+	local L_3_Org = {      "getrawmetatable",       "game",       "workspace",       "script",       "math",       "string",       "table",       "print",       "wait",       "BrickColor",       "Color3",       "next",       "pairs",       "ipairs",       "select",       "unpack",       "Instance",       "Vector2",       "Vector3",       "CFrame",       "Ray",       "UDim2",       "Enum",       "assert",       "error",       "warn",       "tick",       "loadstring",       "_G",       "shared",       "getfenv",       "setfenv",       "newproxy",       "setmetatable",       "getmetatable",       "os",       "debug",       "pcall",       "ypcall",       "xpcall",       "rawequal",       "rawset",       "rawget",       "tonumber",       "tostring",       "type",       "typeof",       "_VERSION",       "coroutine",       "delay",       "require",       "spawn",       "LoadLibrary",       "settings",       "stats",       "time",       "UserSettings",       "version",       "Axes",       "ColorSequence",       "Faces",       "ColorSequenceKeypoint",       "NumberRange",       "NumberSequence",       "NumberSequenceKeypoint",       "gcinfo",       "elapsedTime",       "collectgarbage",       "PhysicalProperties",       "Rect",       "Region3",       "Region3int16",       "UDim",       "Vector2int16",       "Vector3int16" } 
+	local L_3_ = {      "getrawmetatable",       "game",       "workspace",       "script",       "math",       "string",       "table",       "print",       "wait",       "BrickColor",       "Color3",       "next",       "pairs",       "ipairs",       "select",       "unpack",       "Instance",       "Vector2",       "Vector3",       "CFrame",       "Ray",       "UDim2",       "Enum",       "assert",       "error",       "warn",       "tick",       "loadstring",       "_G",       "shared",       "getfenv",       "setfenv",       "newproxy",       "setmetatable",       "getmetatable",       "os",       "debug",       "pcall",       "ypcall",       "xpcall",       "rawequal",       "rawset",       "rawget",       "tonumber",       "tostring",       "type",       "typeof",       "_VERSION",       "coroutine",       "delay",       "require",       "spawn",       "LoadLibrary",       "settings",       "stats",       "time",       "UserSettings",       "version",       "Axes",       "ColorSequence",       "Faces",       "ColorSequenceKeypoint",       "NumberRange",       "NumberSequence",       "NumberSequenceKeypoint",       "gcinfo",       "elapsedTime",       "collectgarbage",       "PhysicalProperties",       "Rect",       "Region3",       "Region3int16",       "UDim",       "Vector2int16",       "Vector3int16" } 
+	local L_4_ = {       "and",       "break",       "do",       "else",       "elseif",       "end",       "false",       "for",       "function",       "goto",       "if",       "in",       "local",       "nil",       "not",       "or",       "repeat",       "return",       "then",       "true",       "until",       "while" } 
+	
+	local function L_5_func(L_49_arg1)       
+		local L_50_, L_51_ = L_49_arg1.CanvasSize.Y.Offset, L_49_arg1.AbsoluteWindowSize.Y       
+		local L_52_ = L_50_ - L_51_       
+		if L_52_ < 0 then             
+			L_52_ = 0
+		end       
+		local L_53_ = Vector2.new(L_49_arg1.CanvasPosition.X, L_52_)       
+		return L_53_ 
+	end 
+	local function ofodguisgfhjjksfghkgh(L_49_arg1)       
+		local L_50_, L_51_ = L_49_arg1.CanvasSize.X.Offset, L_49_arg1.AbsoluteWindowSize.X       
+		local L_52_ = L_50_ - L_51_       
+		if L_52_ < 0 then             
+			L_52_ = 0
+		end       
+		local L_53_ = Vector2.new(L_52_,L_49_arg1.CanvasPosition.Y)       
+		return L_53_ 
+	end 
+	local function GetLineSelected(s)
+		local text =  s.Text
+		local p = s.CursorPosition
+		local text2 = ""
+		for i = p,1,-1 do
+			local c = text:sub(i,i)
+			if c == "\n" then
+				break
+			else
+				text2 = text2 .. c
+			end
+		end
+	
+		return (text2:reverse())
+	end
+	
+	wait(.2) 
+	local L_6_ = 20 
+	L_1_:GetPropertyChangedSignal("Text"):Connect(function()
+		if settings.Highlight then
+			local L_54_ = L_1_.Comments_       
+			local L_56_ = L_1_.Tokens_       
+			local L_57_ = L_1_.Numbers_       
+			local L_58_ = L_1_.Strings_             
+			local L_61_ = L_1_.Keywords_       
+			local L_62_ = L_1_.Globals_  
+			local L_90_ = L_1_.Vars_  
+			if settings.LoadLexer then
+				local tokens= lexerscan(L_1_.Text) 
+				L_54_.Text=GetTypeToMakeSyntax(tokens,"comment")
+	
+				L_58_.Text=GetTypeToMakeSyntax(tokens,"string")
+	
+				L_57_.Text=GetTypeToMakeSyntax(tokens,"number")
+	
+				L_62_.Text=GetTypeToMakeSyntax(tokens,"builtin")
+	
+				L_56_.Text=GetTypeToMakeSyntax(tokens,"symbol")
+	
+				L_61_.Text=GetTypeToMakeSyntax(tokens,"keyword")
+	
+				if settings.HighlightVariables then
+					L_90_.Text=GetTypeToMakeSyntax(tokens,"var")
+				end
+	
+			else
+				spawn(function()
+					L_54_.Text=GetTypeToMakeSyntax(L_1_.Text,"comment")
+				end)
+				spawn(function()
+					L_58_.Text=GetTypeToMakeSyntax(L_1_.Text,"string")
+				end)
+				spawn(function()
+					L_57_.Text=GetTypeToMakeSyntax(L_1_.Text,"number")
+				end)
+				spawn(function()
+					L_62_.Text=GetTypeToMakeSyntax(L_1_.Text,"builtin")
+				end)
+				spawn(function()
+					L_56_.Text=GetTypeToMakeSyntax(L_1_.Text,"symbol")
+				end)
+				spawn(function()
+					L_61_.Text=GetTypeToMakeSyntax(L_1_.Text,"keyword")
+				end)
+				spawn(function()
+					if settings.HighlightVariables then
+						L_90_.Text=GetTypeToMakeSyntax(L_1_.Text,"var")
+					end
+				end)
+	
+			end
+		end
+		local L_63_ = 1    
+		if settings.Scroll then
+			local X = L_1_.TextBounds.X
+			L_1_.Parent.CanvasSize = (UDim2.new(0, L_1_.TextBounds.X + 55 + 5, 0, L_1_.TextBounds.Y))   
+		end
+		if settings.Lines then
+			L_1_.Text:gsub('\n', function()             
+				L_63_ = L_63_ + 1       end)      
+			L_1_.Parent.Lines.Text = ""       
+			for L_64_forvar1 = 1, L_63_ do             
+				L_1_.Parent.Lines.Text = L_1_.Parent.Lines.Text..L_64_forvar1.."\n"       
+			end       
+		end
+		if settings.Scroll then
+			spawn(function()
+				if L_1_.Parent.CanvasPosition.X == L_2_.X then
+					L_1_.Parent.CanvasPosition = ofodguisgfhjjksfghkgh(L_1_.Parent)  
+				else             
+					L_2_ = ofodguisgfhjjksfghkgh(L_1_.Parent)   
+				end 
+			end)
+			wait()
+			if L_1_.Text:sub(#L_1_.Text,#L_1_.Text) == "\n" then
+				L_1_.Parent.CanvasPosition = Vector2.new()
+			end
+	
+			if L_1_.Parent.CanvasPosition.Y == L_2_.Y then
+				L_1_.Parent.CanvasPosition = L_5_func(L_1_.Parent)       
+			else             
+				L_2_ = L_5_func(L_1_.Parent)       
+			end 
+		end
+	
+	
+	
+	end) 
+	if settings.Scroll then
+		L_1_.MouseWheelBackward:Connect(function(L_65_arg1, L_66_arg2)       
+			wait(.1)      
+			game.TweenService:Create(L_1_.Parent, TweenInfo.new(.5, Enum.EasingStyle.Quint), {CanvasPosition = L_1_.Parent.CanvasPosition + Vector2.new(0, L_6_)}):Play()
+			L_6_ = L_6_ + 5       
+			wait(1)       
+			L_6_ = L_6_ - 5 	
+		end) 
+		L_1_.MouseWheelForward:Connect(function(L_67_arg1, L_68_arg2)    
+			wait(.1)      
+			game.TweenService:Create(L_1_.Parent, TweenInfo.new(.5, Enum.EasingStyle.Quint), {CanvasPosition = L_1_.Parent.CanvasPosition + Vector2.new(0,-L_6_)}):Play()
+			L_6_ = L_6_ + 5       
+			wait(1)       
+			L_6_ = L_6_ - 5 
+		end)
+	end
+	if settings.Lines then
+		script.Parent.Lines.Visible = true
+		L_1_.Position = UDim2.new(0,30,0,0)
+	else
+		L_1_.Position = UDim2.new()
+	end
+	if settings.AutomaticSettingChange== true then
+		
+		spawn(function()
+			pcall(function()
+				while wait(10) do
+					settings.Highlight=true
+					if Fps>50 then
+						settings.SplitScanLines=false
+						settings.LoadLexer=false
+						settings.WaitIfRendered=false
+						
+					elseif Fps<60 and Fps>40 then
+						settings.SplitScanLines=false
+						settings.LoadLexer=true
+						settings.WaitIfRendered=true
+						settings.HighlightVariables=false
+						
+					elseif Fps<35 then
+						settings.SplitScanLines=true
+						settings.LoadLexer=true
+						settings.WaitIfRendered=true
+						settings.HighlightVariables=false
+						
+					elseif Fps>10 then
+						settings.Highlight=false
+					end
+				end
+			end)
+		end)
+	end
+end
+coroutine.wrap(SWQKQPN_fake_script)()
+local function YJUN_fake_script() -- aaaaaaaaaaaaaa.Main 
+	local script = Instance.new('LocalScript', aaaaaaaaaaaaaa)
 
 	script.Parent.Name = math.random(1,999999)
 	
 	local player = game.Players.LocalPlayer
 	
 	local Main = script.Parent:FindFirstChild("Main")
-	local ExecuBox = Main:FindFirstChild("ExecuBox")
+	local ExecuBox = Main:FindFirstChild("ExecuBox"):FindFirstChild("Source")
 	local SideBar = Main:FindFirstChild("SideFrame")
 	
 	local function Moderate()
@@ -441,59 +1314,32 @@ local function GHRI_fake_script() -- ScreenGui.Main
 	local X = Main:FindFirstChild("Top"):FindFirstChild("Close")
 	local R6 = SideBar:FindFirstChild("R6")
 	local StarterGui = game:GetService("StarterGui")
+	
 	local Other = ""
+	--[[function CheckDEV()
+		--Checks if they're are any dev api refrences
+		if ExecuBox.Text:lower():find("BDV") then
+			Other = "BDV"
+			local plr = game.Players.LocalPlayer
+			if game:GetService("Chat"):FindFirstChild("ChatLocalizationService") then
+				if game:GetService("Chat"):FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage") then
+					game:GetService("Chat"):FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage"):FireServer(plr,Other)
+			else
+				StarterGui:SetCore("SendNotification",{
+					Title = "Phobos",
+					Text = "Failed to find backdoor: BACKDOOR SUDDENLY REMOVED?",
+					Duration = 5
+				})
+				end
+			end
+		end
+		return
+	end
+	--]]
 	ExecuSS.MouseButton1Down:Connect(function()
 		Other = "Server"
 		if game:GetService("Chat"):FindFirstChild("ChatLocalizationService") then
 			if game:GetService("Chat"):FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage") then
-				if ExecuBox.Text:lower():find("0x22330bb15") then --anti necko hub
-					Moderate()
-				elseif ExecuBox.Text:lower():find(".hotladiesinyourarea") then
-					Moderate()
-				elseif ExecuBox.Text:lower():find("3927366328") then
-					Moderate()
-				elseif ExecuBox.Text:lower():find("4679462782") then
-					Moderate()
-				elseif ExecuBox.Text:lower():find("5245212319") then
-					Moderate()
-				elseif ExecuBox.Text:lower():find("4974660464") then
-					Moderate()
-				elseif ExecuBox.Text:lower():find("507689885") then
-					Moderate()
-				elseif ExecuBox.Text:lower():find("5602218231") then
-					Moderate()
-				elseif ExecuBox.Text:lower():find("5151292433") then
-					Moderate()
-				elseif ExecuBox.Text:lower():find("5656786759") then
-					Moderate()
-				elseif ExecuBox.Text:lower():find("5329735129") then
-					Moderate()
-				elseif ExecuBox.Text:lower():find("5679036702") then
-					Moderate()
-				end
-	
-				if ExecuBox.Text:lower():find("2609384717") then --anti topk3k
-					Moderate()
-				elseif ExecuBox.Text:lower():find("4101644858") then
-					Moderate()
-	
-				elseif ExecuBox.Text:lower():find("5610305900") then
-					Moderate()
-	
-				elseif ExecuBox.Text:lower():find("6352196759") then
-					Moderate()
-				end
-				
-				if ExecuBox.Text:lower():find("10352103179") then --more stuff
-					Moderate()
-				elseif ExecuBox.Text:lower():find("5411425988") then
-					Moderate()
-	
-				elseif ExecuBox.Text:lower():find("5420741830") then
-					Moderate()
-				elseif ExecuBox.Text:lower():find("4959479932") then
-					Moderate()
-				end
 				game:GetService("Chat"):FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage"):FireServer(ExecuBox.Text)
 			else
 				StarterGui:SetCore("SendNotification",{
@@ -512,7 +1358,7 @@ local function GHRI_fake_script() -- ScreenGui.Main
 	end)
 	
 	Clear.MouseButton1Down:Connect(function()
-		ExecuBox.Text = ""
+		Main:FindFirstChild("ExecuBox"):FindFirstChild("Source").Text = ""
 	end)
 	
 	Respawn.MouseButton1Down:Connect(function()
@@ -569,4 +1415,4 @@ local function GHRI_fake_script() -- ScreenGui.Main
 		end
 	end)
 end
-coroutine.wrap(GHRI_fake_script)()
+coroutine.wrap(YJUN_fake_script)()
